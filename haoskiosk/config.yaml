@@ -1,5 +1,5 @@
 ---
-name: "HAOS Kiosk Display"
+name: "HAOS Kiosk Display - Chromium test"
 description: |
   Start X server and browser on local HAOS server and display dashboards in
   kiosk mode (Jeff Kosowsky)
