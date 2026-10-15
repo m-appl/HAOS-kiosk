@@ -150,6 +150,7 @@ case "$BROWSER" in
 }
 KIOSK_POLICY
         BROWSER_FLAGS="--kiosk --ozone-platform=x11 --touch-events=enabled --ignore-gpu-blocklist --enable-gpu-rasterization --enable-zero-copy --enable-features=VaapiVideoDecoder --no-sandbox --no-first-run --no-default-browser-check --disable-search-engine-choice-screen --password-store=basic --user-data-dir=/data/chromium --remote-debugging-port=9222"
+        BROWSER_FLAGS="$BROWSER_FLAGS --autoplay-policy=no-user-gesture-required"
         BROWSER_MATCH="chromium"
         ;;
     *)
