@@ -71,7 +71,7 @@ RUN apk update && apk add --no-cache \
 
 ##### Optional: bake in Chromium at build time (opt-in via BUILD_BROWSER=chromium).
 ##### Default 'luakit' pulls nothing in, so the luakit image is unchanged.
-ARG BUILD_BROWSER=luakit
+ARG BUILD_BROWSER=chromium
 RUN if [ "$BUILD_BROWSER" = "chromium" ]; then \
         apk add --no-cache chromium \
         && rm -rf /var/cache/apk/*; \
